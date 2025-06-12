@@ -7,11 +7,18 @@
     font-family: Poppins, sans-serif;
 }
 
+body {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
 .container {
     display: flex;
     width: 800px;
     padding: 5px;
     border-top: 3px solid #9FBF00;
+    background-color: white;
+    margin-bottom: 20px;
 }
 
 .left-container {
@@ -60,14 +67,6 @@ i {
     margin: auto 0;
 }
 
-.phone-number p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #9FBF00;
-    padding: 0 5px;
-    margin: auto 0;
-}
-
 .redes {
     width: 100%;
     margin-top: 10px;
@@ -76,4 +75,71 @@ i {
 .right-container img {
     width: 95%;
     height: 230px;
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+    margin-left: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px;
+    background-color: #9FBF00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #88a900;
+}
+
+#copy-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#copy-toast.show {
+    opacity: 1;
+}
+
+#empty-toast {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d9534f;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#empty-toast.show {
+  opacity: 1;
 }
