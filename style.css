@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    padding: 5px;
+    border-top: 3px solid #9FBF00;
+}
+
+.left-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-container {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+i {
+    color: #9FBF00;
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+.name {
+    font-size: 42px;
+    font-weight: 400;
+    color: #8b8b8b;
+}
+
+.rol {
+    font-size: 24px;
+    font-weight: 300;
+    color: #949494;
+}
+
+.phone-number,
+.address {
+    display: flex;
+    margin-top: 15px;
+}
+
+.phone-number h4,
+.address h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #858585;
+    margin: auto 0;
+}
+
+.phone-number p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #9FBF00;
+    padding: 0 5px;
+    margin: auto 0;
+}
+
+.redes {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.right-container img {
+    width: 95%;
+    height: 230px;
+}
