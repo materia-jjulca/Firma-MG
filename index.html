@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firma - Materia Gris</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container" id="card">
@@ -27,14 +27,11 @@
         </div>
     </div>
     <form id="edit-form">
-        <label>Nombre: <input type="text" id="input-name" placeholder="Nuevo nombre"></label><br>
-        <label>Rol: <input type="text" id="input-rol" placeholder="Nuevo rol"></label><br>
-        <label>Número: <input type="text" id="input-number" placeholder="Nuevo número"></label><br>
-        <button type="button" id="save-btn">Guardar Cambios</button>
-        <button type="button" id="clear-btn">Limpiar datos</button>
+        <label>Nombre y Apellido: <input type="text" id="input-name" placeholder="Nombre y apellido del colaborador" autocomplete="off" /></label><br />
+        <label>Rol: <input type="text" id="input-rol" placeholder="Rol del colaborador" autocomplete="off" /></label><br />
+        <label>Número: <input type="text" id="input-number" placeholder="Número del colaborador" autocomplete="off" /></label><br />
         <button type="button" id="copy-btn">Copiar imagen</button>
     </form>
-    <div id="empty-toast">Por favor ingresa al menos un dato</div>
     <div id="copy-toast">Firma copiada al portapapeles ✅</div>
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <script src="script.js"></script>
